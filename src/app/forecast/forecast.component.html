@@ -1,0 +1,12 @@
+<ul class="forecast row">
+  <li class="col-md-3" *ngFor="let w of weathers">
+    <div class="current-weather">
+      <h4>{{w.time}}</h4>
+      <h3>Nhiệt độ: {{w.temp}}<sup>o</sup>C</h3>
+      <h3>Độ ẩm: {{w.hump}}%</h3>
+      <h3>Áp suất: {{w.press}}</h3>
+      <h4>{{w.desc}}</h4>
+      <img src="http://openweathermap.org/img/wn/{{w.icon}}@2x.png" width="150"/>
+    </div>
+  </li>
+</ul>
